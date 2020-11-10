@@ -9,6 +9,18 @@ void setup() {
 void draw() {
   
 // First run the program and you should see a flower.  
+int x= 100;
+int y= 100;
+int i;
+for (i=0; i < 20 ; i++) {
+  ellipse (x+=10, y+=10, 40, 40); 
+  if (i % 2 == 0){
+  fill(#F2F769);
+  }else{
+  fill(#030302);
+  }
+  }
+  drawBeeFace(300,300);
   
   
 /* Then, use a loop to make a body for the Bee! 

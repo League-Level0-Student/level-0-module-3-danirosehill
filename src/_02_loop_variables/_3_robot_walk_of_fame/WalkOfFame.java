@@ -9,17 +9,16 @@ public class WalkOfFame {
 		rob.hide();
 		rob.setX(50);
 		int z;
-		for (z=0; z<10; z++) {
-		int x;
-		for (x=0; x < 5; x++) {
-		rob.penDown();
-		rob.setSpeed(100);
-		rob.move(30);
-		rob.turn(144);
-		}
-		rob.penUp();
-		rob.setAngle(90);
-		rob.move(50);
+		for (z = 0; z < 10; z++) {
+			int x;
+			for (x = 0; x < 5; x++) {
+				rob.penDown();
+				rob.setSpeed(100);
+				rob.move(30);
+				rob.turn(144);
+			}
+			rob.setX(rob.getX()+50);
+			
 		}
 		
 

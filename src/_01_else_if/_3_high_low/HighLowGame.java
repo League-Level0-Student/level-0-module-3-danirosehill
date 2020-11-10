@@ -17,7 +17,7 @@ public class HighLowGame {
 			for (i=0; i < 10 ; i ++) {
 			String answer = JOptionPane.showInputDialog("Guess what number I am thinking of between 1 and 100.");
 			int intanswer = Integer.parseInt(answer);
-			if ("intanswer".equals(random)) {
+			if (intanswer == random) {
 			JOptionPane.showConfirmDialog(null, "You win!");
 			System.exit(0);
 			}
